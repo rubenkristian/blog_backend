@@ -2,7 +2,7 @@ use chrono::{Duration, Utc};
 use jsonwebtoken::{DecodingKey, EncodingKey, Header, Validation, decode, encode};
 use serde::{Deserialize, Serialize};
 
-const SECRET: &[u8] = b"my_secret_key";
+const SECRET: &[u8] = b"my_secret_key"; // remove this line
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Claims {

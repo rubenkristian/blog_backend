@@ -1,5 +1,5 @@
 use super::jwt::validate_token;
-use actix_web::{Error, dev::ServiceRequest};
+use actix_web::{Error, dev::ServiceRequest, http::Method};
 use actix_web_httpauth::extractors::{
     AuthenticationError,
     bearer::{BearerAuth, Config},
